@@ -2,9 +2,7 @@
 <html><head>
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>prova</title>
-
-  
+    
 </head><body>
 <h1>Scenario: 3 Vlan, 1 Switch Layer 3 Multilivello, comunicazioni tra
 Vlan con router, 1a rete
@@ -80,7 +78,7 @@ del router wifi<br>
 
 <br>
 
-6) Impostare il default gateway sul server radius. Il gateway è svolto
+6) Impostare il default gateway sul server radius. Il gateway Ã¨ svolto
 dallo switch layer 3<br>
 
 <br>
@@ -151,7 +149,7 @@ per vedere i comandi inseriti.<br>
 <img style="width: 1152px; height: 650px;" src="switch32.jpg" alt=""><br>
 11) impostare sul router l'indirizzo ip della porta&nbsp; 8.0.0.1
 verso&nbsp; la rete Internet e impostare le rotte statiche verso le
-reti delle vlan interne della rete trust. Nella cli del router è
+reti delle vlan interne della rete trust. Nella cli del router Ã¨
 comunque possibile vedere i comandi inseriti digitando <span style="font-weight: bold;">sh ru</span><br>
 <br>
 <br>
