@@ -53,7 +53,7 @@ outside</span></p>
 </span></span></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">Il
 commando <b>access-list</b>
 definisce gli indirizzi di rete interni che potranno essere tradotti
-con NAT;</span><o:p></o:p></p>
+con NAT;</span></p>
 
 <p class="MsoListParagraph" style="text-indent: -18pt;"><!--[if !supportLists]--><span style=""><span style="">2)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">Il
@@ -74,9 +74,9 @@ definisce l&#8217;interfaccia rivolta agli indirizzi interni privati;</span><o:p
 </span></span></span><b><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">ip
 nat
 outside</span></b><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">
-definisce l&#8217;interfaccia rivolta agli indirizzi esterni pubblici;</span><o:p></o:p></p>
+definisce l&#8217;interfaccia rivolta agli indirizzi esterni pubblici;</span></p>
 
-<span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span>
+<span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span>
 <p class="MsoNormal" style="margin-left: 18pt;"><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">In
 modalità simulazione sul router0
 il pacchetto IP in ingresso e in uscita con la traduzione
