@@ -3,11 +3,10 @@
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
 
-  
-  <title></title>
+ 
 </head><body>
 <p class="MsoNormal"><b><span style="font-size: 12pt; line-height: 106%;">NAT PAT
-(Port Address Translation) Traduzione di più indirizzi privati in un
+(Port Address Translation) Traduzione di piÃ¹ indirizzi privati in un
 indirizzo
 pubblico<o:p></o:p></span></b></p>
 
@@ -61,7 +60,7 @@ con NAT;</span><o:p></o:p></p>
 comando <b>ip
 nat inside source list 1</b> combina la list 1 con l&#8217;interfaccia
 esterna del
-router. Per consentire la traduzione di più indirizzi privati in un
+router. Per consentire la traduzione di piÃ¹ indirizzi privati in un
 solo
 indirizzo pubblico saranno utilizzati i numeri delle porte (<b>overload</b>);</span><o:p></o:p></p>
 
@@ -79,7 +78,7 @@ definisce l&#8217;interfaccia rivolta agli indirizzi esterni pubblici;</span><o:
 
 <span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span>
 <p class="MsoNormal" style="margin-left: 18pt;"><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">In
-modalità simulazione sul router0
+modalitÃ  simulazione sul router0
 il pacchetto IP in ingresso e in uscita con la traduzione
 dell&#8217;indirizzo
 privato in indirizzo pubblico.</span></p>
