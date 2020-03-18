@@ -2,9 +2,9 @@
 <html><head>
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>Nat Pat</title>
 
   
+  <title></title>
 </head><body>
 <p class="MsoNormal"><b><span style="font-size: 12pt; line-height: 106%;">NAT PAT
 (Port Address Translation) Traduzione di più indirizzi privati in un
@@ -19,7 +19,7 @@ tutti gli indirizzi privati della rete Trust locale usano un unico
 indirizzo IP
 pubblico e svariati numeri di porta per la traduzione.<o:p></o:p></span></p>
 
-<img src="file:///C:/Users/Luca/AppData/Local/Temp/moz-screenshot-19.jpg" alt=""><br>
+<img src="moz-screenshot-19.jpg" alt=""><br>
 
 <br>
 
