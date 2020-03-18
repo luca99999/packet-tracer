@@ -76,7 +76,7 @@ nat
 outside</span></b><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">
 definisce l&#8217;interfaccia rivolta agli indirizzi esterni pubblici;</span></p>
 
-<span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"><o:p></o:p></span>
+<span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;"></span>
 <p class="MsoNormal" style="margin-left: 18pt;"><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">In
 modalità simulazione sul router0
 il pacchetto IP in ingresso e in uscita con la traduzione
