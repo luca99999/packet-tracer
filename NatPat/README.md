@@ -47,7 +47,7 @@ fa1/0 overload<o:p></o:p></span></p>
 <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;,serif;" lang="EN-US">Router(config-if)#int fa1/0<o:p></o:p></span></p>
 
 <p class="MsoNormal"><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;" lang="EN-US">Router(config-if)#ip nat
-outside<o:p></o:p></span></p>
+outside</span></p>
 
 <p class="MsoListParagraph" style="text-indent: -18pt;"><!--[if !supportLists]--><span style=""><span style="">1)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><span style="font-size: 12pt; line-height: 106%; font-family: &quot;Times New Roman&quot;,serif;">Il
