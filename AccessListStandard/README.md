@@ -3,7 +3,6 @@
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
 
-  <title></title>
 </head><body>
 <p class="MsoNormal"><br>
 </p>
@@ -17,7 +16,7 @@ Access List Standard<br>
 <p class="MsoNormal">Le access lists standard (1 &#8211; 99)&nbsp; permettono
 o negano il traffico
 sulla base dell&#8217;indirizzo IP o dell'indirizzo di rete sorgente. Si
-applicano il più vicino possibile
+applicano il piÃ¹ vicino possibile
 alla destinazione.<o:p></o:p></p>
 
 <p class="MsoNormal"><o:p></o:p>Le access lists estesa (100 &#8211; 199),
@@ -29,7 +28,7 @@ numero di porta (servizio http, ftp, dns ecc..). Nella access list
 estesa sono
 sempre indicati la sorgente e la destinazione e opzionalmente il numero
 di
-porta o servizio. Si applicano il più vicino
+porta o servizio. Si applicano il piÃ¹ vicino
 possibile alla sorgente.</p>
 
 <p class="MsoNormal">I passaggi sono:<o:p></o:p></p>
@@ -56,8 +55,8 @@ router il traffico esce.  <o:p></o:p></p>
 
 Si vuole negare il traffico proveniente dal pc con indirizzo Ip
 sorgente 192.168.1.2 e destinato alla rete 192.168.3.0/24.&nbsp;
-L'access list standard verrà applicata alla interfaccia Fa1/0 del
-router di sinistra e cioè all'interfaccia&nbsp; più vicina possibile
+L'access list standard verrÃ  applicata alla interfaccia Fa1/0 del
+router di sinistra e cioÃ¨ all'interfaccia&nbsp; piÃ¹ vicina possibile
 alla destinazione<br>
 
 I comandi da impostare nella Cli del router sono:<br>
@@ -85,23 +84,23 @@ access-group 1 out</p>
 <br>
 
 All'indirizzo IP dell'access list si applica la wild mask (maschera di
-rete inversa). In presenza del valore zero nella wild mask la regola è
-verificata se l'ottetto corrispondente del pacchetto è identico al
+rete inversa). In presenza del valore zero nella wild mask la regola Ã¨
+verificata se l'ottetto corrispondente del pacchetto Ã¨ identico al
 corrispondente ottetto dell'indirizzo indicato nella access list. Per
 bloccare ad esempio una rete classfull di tipo C /24&nbsp; la wild mask
-sarà 0.0.0.255 e cioè solo i primi tre ottetti dell'indirizzo devono
-corrispondere mentre nel caso di un singolo host la maschera sarà
+sarÃ  0.0.0.255 e cioÃ¨ solo i primi tre ottetti dell'indirizzo devono
+corrispondere mentre nel caso di un singolo host la maschera sarÃ 
 0.0.0.0 in quanto tutti gli ottetti dell'indirizzo IP dovranno
 corrispondere. Il comando ip access-group applica l'access lista
 all'interfaccia.<br>
 
 Le regole impostate sull'access list vengono esaminate dal router in
-sequenza in base all'ordine di inserimento (di priorità). Le regole più
+sequenza in base all'ordine di inserimento (di prioritÃ ). Le regole piÃ¹
 restrittive sono inserite all'inizio della sequenza. Per ogni pacchetto
 vengono verificate le singole regole. La prima regola che risulta
 verificata viene applicata e il firewall termina l'analisi. Se nessuna
-regola è verificata allora il firewall applica la regola di default che
-può essere blocca tutto (deny all) oppure consenti tuuto (permit any).<br>
+regola Ã¨ verificata allora il firewall applica la regola di default che
+puÃ² essere blocca tutto (deny all) oppure consenti tuuto (permit any).<br>
 
 <br>
 
