@@ -19,7 +19,7 @@ sulla base dell&#8217;indirizzo IP o dell'indirizzo di rete sorgente. Si
 applicano il più vicino possibile
 alla destinazione.<o:p></o:p></p>
 
-<p class="MsoNormal"><o:p></o:p>Le access lists estesa (100 &#8211; 199),
+<p class="MsoNormal"><o:p></o:p>Le access lists estese (100 &#8211; 199),
 permettono o negano il traffico sulla base dell&#8217;indirizzo IP o
 della rete sorgente, <span style="">&nbsp;</span>negano o permettono
 il
