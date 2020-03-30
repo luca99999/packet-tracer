@@ -100,7 +100,7 @@ restrittive sono inserite all'inizio della sequenza. Per ogni pacchetto
 vengono verificate le singole regole. La prima regola che risulta
 verificata viene applicata e il firewall termina l'analisi. Se nessuna
 regola è verificata allora il firewall applica la regola di default che
-può essere blocca tutto (deny all) oppure consenti tuuto (permit any).<br>
+può essere blocca tutto (regola di default implicita deny any) oppure consenti tutto (permit any da inserire se non si vuole che venga applicata la regola di default deny any).<br>
 
 <br>
 
