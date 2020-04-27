@@ -9,25 +9,25 @@
 Site-to-Site con Packet Tracer</span></h1>
 
 <span style="font-family: Arial;">Le VPN utilizza l'IPsec che garantisce la
-cifratura, l'integrit‡ dei pacchetti (compreso l'Header),
+cifratura, l'integrit√† dei pacchetti (compreso l'Header),
 l'autenticazione  degli utenti e indirettamente <br>
 fornisce il controllo dell'accesso tramite l'uso di un database (SAD) per le Security Associations.<br><br>
 IPsec utilizza tre protocolli:</span><span style="font-family: Arial;"></span><span style="font-family: Arial;"></span><span style="font-family: Arial;"></span><span style="font-family: Arial;"><br>
 <br>
 1) Authentication Header (AH): garantisce l`autenticazione e
-l`integrit‡ del messaggio ma non offre la cifratura del payload. Prima
-del payload, del segmento TCP o UDP, Ë inserita <br>
-una intestazione AH, con modalit‡ diverse a seconda del tipo di
+l`integrit√† del messaggio ma non offre la cifratura del payload. Prima
+del payload, del segmento TCP o UDP, √® inserita <br>
+una intestazione AH, con modalit√† diverse a seconda del tipo di
 utilizzo (Trasport Mode o Tunnel Mode - VPN), composta dallo SPI (che
 identifica la security association con il destinatario), <br>
 dal Sequence Number progressivo (per evitare attacchi esterni) e
 dall'hash (HMAC-Hashed) ottenuto sottoponendo </span><span style="font-family: Arial;">l'intestazione IP (esclusi i campi TTL e
 Checksum) e il payload dei dati <br>
-ad una funzione di hashing.</span><span style="font-family: Arial;"> AH non Ë
+ad una funzione di hashing.</span><span style="font-family: Arial;"> AH non √®
 compatibile con il NAT standard.</span><span style="font-family: Arial;"><br>
 2) Encapsulating Security Payload (ESP): fornisce autenticazione,
-confidenzialit‡ e autenticazione: E' possibile utilizzare solo il
-servizio di confidenzialit‡ o i servizi di autenticazione e integrit‡ <br>
+confidenzialit√† e autenticazione: E' possibile utilizzare solo il
+servizio di confidenzialit√† o i servizi di autenticazione e integrit√† <br>
 oppure tutti i servizi insieme. Crea una intestazione ESP (con i campi
 SPI ed SN come in AH) e un Trailer (coda) che sono aggiunti al payload. Il payload e il Trailer Esp vengono poi cifrati. <br>
 L'intestazione Esp insieme al payload cifrato sono passati ad una
@@ -36,14 +36,14 @@ l'autenticazione.<br>
 3) Il protocollo Internet Key Exchange (IKE) crea una Security Association
 (canale sicuro) che implementa lo scambio sicuro delle
 chiavi crittografiche ricavate con uno dei protocolli<br>
-del gruppo Diffie-Hellman DH1,DH2,DH5. L'IKE Ë diviso in due fasi. La prima fase
+del gruppo Diffie-Hellman DH1,DH2,DH5. L'IKE √® diviso in due fasi. La prima fase
 crea una SA per la seconda fase che a sua volta crea una SA per il
 protocollo IPSEC.<br>
 <br>
-La modalit‡ Tunnel Mode IPsec cifra
+La modalit√† Tunnel Mode IPsec cifra
 completamente
 i pacchetti senza utilizzare entrambi i protocollli AH e ESP
-contemporaneamente. Il pacchetto originale cifrato Ë
+contemporaneamente. Il pacchetto originale cifrato √®
 inserito <br>
 all'interno di un altro pacchetto (tunneling) che contiene i due indirizzi
 pubblici dei router di confine coinvolti nella VPN. <br>
@@ -55,21 +55,21 @@ destinazione. <br>
 Nello scenario i router sono della serie 2901 e gli switch sono della
 serie 2960. Non sono impostate rotte statiche verso la rete
 192.168.3.0/24&nbsp;  e verso la rete 192.168.2.0/24.<br>
-Una volta attivata la VPN tra i router R2 e R3 sar‡
+Una volta attivata la VPN tra i router R2 e R3 sar√†
 possibile mettere in comunicazione le due reti locali (ad es:
 effettuando il ping) pur mantenendo inalterata la
 configurazione <br>
 della tabella di routing del router intermedio R1.<br>
 <br>
 <br>
-</span><img src="./immagini/Scenario.jpg" alt=""><br>
+</span><img src="./Immagini/Scenario.jpg" alt=""><br>
 
 <span style="font-family: Arial; font-weight: bold;">Procedimento:</span><br>
 
 <br>
 
 <span style="font-family: Arial;">Sui router R2 e R3 che svolgono il
-ruolo di gateway per le due Lan della VPN Ë necessario
+ruolo di gateway per le due Lan della VPN √® necessario
 installare il pacchetto software per la sicurezza SECURITYK9,</span><br>
 
 <br>
@@ -123,7 +123,7 @@ R2#show version</span><br>
 <span style="font-family: Arial;">R3#show version</span><br>
 
 <span style="font-family: Arial;"><br>
-</span><img src="./immagini/securityk9.jpg" alt=""><br>
+</span><img src="./Immagini/securityk9.jpg" alt=""><br>
 
 <p style="margin: 0px; text-indent: 0px; font-family: Arial;"><br>
 </p>
@@ -167,9 +167,9 @@ scambio di messaggi per l'IKE</span>.<br>
 <span style="font-family: Arial;">Viengono Impostate la politica ISAKMP e la
 chiave ISAKMP (algoritmi di
 cifrazione e autenticazione quali es: DES, AES, MD5, DH ecc.) <br></span><span style="font-family: Arial;">Con il metodo preshared secret-key
-(PSK) verr‡ </span><span style="font-family: Arial;">utilizzata una
+(PSK) verr√† </span><span style="font-family: Arial;">utilizzata una
 chiave simmetrica per l'autenticazione reciproca dei peers.<br>
-La cifrazione Ë effettuata tramite l'algoritmo AES con chiave
+La cifrazione √® effettuata tramite l'algoritmo AES con chiave
 crittografica a 256 bit.<br>
 </span><br>
 
@@ -215,7 +215,7 @@ sicura IPSEC per il traffico VPN tra i peers</span><br>
 <br>
 
 <span style="font-family: Arial;">Viene creato un transform set
-costituito dal protocollo esp e dall'algoritmo aes </span><span style="font-family: Arial;">che sar‡ applicato al traffico
+costituito dal protocollo esp e dall'algoritmo aes </span><span style="font-family: Arial;">che sar√† applicato al traffico
 protetto come <br>
 parte della Security Association tra i peers.</span><br>
 
@@ -308,20 +308,20 @@ gig0/0
 
 <br>
 
-<img src="./immagini/IPsec1.jpg" alt=""><br>
+<img src="./Immagini/IPsec1.jpg" alt=""><br>
 
 <br>
 
 <br>
 
-<span style="font-family: Arial;">All'interno del pacchetto IP (campo DATA) Ë presente il secondo pacchetto IP incapsulato dopo l'Header ESP. <br>
- Il router intermedio </span>R1<span style="font-family: Arial;"> non ha visibilit‡ </span><span style="font-family: Arial;">dei campi relativi agli indirizzi IP sorgente e destinazione<br>
+<span style="font-family: Arial;">All'interno del pacchetto IP (campo DATA) √® presente il secondo pacchetto IP incapsulato dopo l'Header ESP. <br>
+ Il router intermedio </span>R1<span style="font-family: Arial;"> non ha visibilit√† </span><span style="font-family: Arial;">dei campi relativi agli indirizzi IP sorgente e destinazione<br>
 degli hosts nelle reti locali in quanto l'intero pacchetto incapsulato </span><span style="font-family: Arial;">transita cifrato all'interno del tunnel <br>
 creato dalla VPN.<br>
 </span><br>
 <br>
 
-<img src="./immagini/IPsec2.jpg" alt=""><br>
+<img src="./Immagini/IPsec2.jpg" alt=""><br>
 
 <br>
 
