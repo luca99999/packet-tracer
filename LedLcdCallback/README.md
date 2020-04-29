@@ -9,16 +9,18 @@ comandato dal pulsante On/Off - Stringa visualizzata su Lcd - attachInterrupt() 
 
 <span style="font-family: Arial;"><span style="font-family: Arial;">La funzione </span>attachInterrupt()
 registra una funzione di callback in modo tale che quando cambia lo
-stato sul pin, la funzione irs() passata come parametro è invocata. <br>
-Funziona per l'input analogico, digitale e custom. Solo una funzione può essere registrata per ciascun pin.<br>
+stato sul pin, la funzione irs() passata come parametro Ã¨ invocata. <br>
+Funziona per l'input analogico, digitale e custom. Solo una funzione puÃ² essere registrata per ciascun pin.<br>
 <br>
 Per accendere e spegnere il led:<br>
 <br>
 1) Andare in Programming sulla scheda MCU, aprire il progetto LcdLed e
 selezionare man.js (Javascript). Premere il pulsante Run per mandare in
-esecuzione il programma;<br>
+esecuzione il programma;
+<br>
 2)&nbsp; Premere contemporaneamente il tasto (Alt e&nbsp; il tasto
-sinistro del mouse) sul pulsante&nbsp; On / Off;<br>
+sinistro del mouse) sul pulsante&nbsp; On / Off;
+<br>
 <br>
 </span><img src="./Scenario.jpg" alt=""><br>
 
