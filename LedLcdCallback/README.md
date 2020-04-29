@@ -1,8 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
-
   
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title></title></head><body>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"></head><body>
 <h1><span style="font-weight: bold; outline-color: navy ! important; outline-style: dashed ! important; outline-width: 2px ! important;">Led
 comandato dal pulsante On/Off - Stringa visualizzata su Lcd - attachInterrupt() <br>
 </span></h1>
@@ -14,7 +13,7 @@ Funziona per l'input analogico, digitale e custom. Solo una funzione può essere
 <br>
 Per accendere e spegnere il led:<br>
 <br>
-1) Andare in Programming sulla scheda MCU, aprire il progetto LcdLed e
+1)&nbsp; Andare in Programming sulla scheda MCU, aprire il progetto LcdLed e
 selezionare man.js (Javascript). Premere il pulsante Run per mandare in
 esecuzione il programma;
 <br>
