@@ -10,7 +10,7 @@ comandato dal pulsante On/Off - Stringa visualizzata su Lcd</span></h1>
 
 <span style="font-family: Arial;">Per accendere e spegnere il led:<br>
 <br>
-1) Andare in Programming sulla scheda MCU, aprire il progetto LcdLed e
+1)&nbsp; Andare in Programming sulla scheda MCU, aprire il progetto LcdLed e
 selezionare man.js (Javascript). Premere il pulsante Run per mandare in
 esecuzione il programma;<br>
 2)&nbsp; Premere contemporaneamente il tasto (Alt e&nbsp; il tasto
