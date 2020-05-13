@@ -2,14 +2,13 @@
 <html><head>
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title></title>
-
+  
   
 </head><body>
 <span style="font-family: Arial;"></span>
 <h1>Configurazione del Firewall ASA 5506 rete DMZ e Rete Trust</h1>
 
-<span style="font-family: Arial;">L'ASA 5506 è un dispositivo evoluto di
+<span style="font-family: Arial;">L'ASA 5506 Ã¨ un dispositivo evoluto di
 sicurezza che integra il firewall stateful, la VPN, il
 dhcp,
 varie tipologie di NAT e un router integrato. Il firewall protegge la
@@ -18,12 +17,12 @@ Internet da parte degli hosts interni. L'ASA 5506 crea interfaccie
 con differenti livelli di sicurezza da 0 a 100. <br>
 Le reti di default sono: Inside e Outside. Viene poi impostata una rete Dmz. <br>
 Il traffico da un livello di sicurezza
-più alto ad uno più basso è consentito mentre il traffico da un livello
-di sicurezza più basso ad uno più alto non è permesso a meno che non si
+piÃ¹ alto ad uno piÃ¹ basso Ã¨ consentito mentre il traffico da un livello
+di sicurezza piÃ¹ basso ad uno piÃ¹ alto non Ã¨ permesso a meno che non si
 tratta di un traffico di ritorno iniziato da host presenti su una rete
-con un livello di sicurezza più alto (stateful packet inspection). <br>
+con un livello di sicurezza piÃ¹ alto (stateful packet inspection). <br>
 <br>
-Nello scenario è presente un router gestito da un&nbsp; ISP (Internet
+Nello scenario Ã¨ presente un router gestito da un&nbsp; ISP (Internet
 Service Provider) e un firewall ASA 5506 a cui sono collegate una rete
 Trust e una Dmz. </span><span style="font-family: Arial;">Gli
 utenti esterni hanno un&nbsp; accesso
@@ -36,7 +35,7 @@ alcun accesso alla rete interna. </span><br>
 <span style="font-weight: bold;"><span style="font-family: Arial;">Configurazione
 del'interfaccia Inside:<br>
 </span></span><span style="font-family: Arial;"><span style="font-family: Arial;"><br>
-L'interfaccia Gig1/2 è configurata per la rete interna (inside) con un
+L'interfaccia Gig1/2 Ã¨ configurata per la rete interna (inside) con un
 livello di sicurezza pari a 100.</span><br>
 </span><span style="font-weight: bold;"><span style="font-family: Arial;"><br>
 </span></span>ASA-FIREWALL(config)#interface GigabitEthernet1/2
@@ -54,7 +53,7 @@ address 192.168.1.1 255.255.255.0</p>
 <span style="font-weight: bold;"><span style="font-family: Arial;">Configurazione
 del'interfaccia Outside:<br>
 </span></span><span style="font-family: Arial;"><span style="font-family: Arial;"><br>
-L'interfaccia Gig1/1 è configurata per la rete esterna (outside) con un
+L'interfaccia Gig1/1 Ã¨ configurata per la rete esterna (outside) con un
 livello di sicurezza pari a 0.</span></span><br>
 
 <br>
@@ -162,7 +161,7 @@ global_policy global</p>
 <span style="font-weight: bold;"><span style="font-family: Arial;"></span></span><span style="font-weight: bold; font-family: Arial;">Configurazione
 del'interfaccia DMZ:<br>
 </span><span style="font-family: Arial;"><span style="font-family: Arial;"><br>
-L'interfaccia Gig1/3 è configurata per la rete dmz&nbsp; con un livello
+L'interfaccia Gig1/3 Ã¨ configurata per la rete dmz&nbsp; con un livello
 di sicurezza pari a 70.</span></span><br>
 
 <br>
@@ -183,7 +182,7 @@ nella DMZ con un network object</span><br>
 </span><br>
 
 <span style="font-family: Arial;"><span style="font-family: Arial;">L'object
-Network specifica che l'indirizzo del server nella DMZ è tradotto con
+Network specifica che l'indirizzo del server nella DMZ Ã¨ tradotto con
 l'indirizzo pubblico 9.0.0.10</span></span><br>
 
 <br>
@@ -200,7 +199,7 @@ ASA-FIREWALL(config-network-object)#nat (dmz,outside) static 9.0.0.10<br>
 dell' Access List (ACL) per il traffico da Internet verso la DMZ:<br>
 <br>
 </span></span><span style="font-family: Arial;"><span style="font-family: Arial;">L'access list ACLDMZ permette il il
-traffico IP da hosts esterni al server interno alla DMZ. L' acl è
+traffico IP da hosts esterni al server interno alla DMZ. L' acl Ã¨
 applicata<br>
 all'interfaccia esterna outside in ingresso<br>
 <br>
